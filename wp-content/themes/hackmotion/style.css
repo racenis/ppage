@@ -1,0 +1,246 @@
+:root {
+    --company-color: #5773ff;
+    --video-slider-progress: 6px;
+  }
+  
+
+html {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #e6e6e6;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.company-color {
+    color: var(--company-color);
+}
+
+.only-mobile {
+    display: none;
+}
+
+#title-div {
+    margin: 25px 25px 25px 25px;
+    float: left;
+}
+
+#title-div:hover {
+	filter: brightness(150%);
+}
+
+#content-div {
+    width: 1200px;
+    margin: 70px auto 70px auto;
+}
+
+#top-content-div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#top-content-left-div {
+    width: 560px;
+    padding: 100px 0px 0 5px;
+    margin-right: 20px;
+}
+
+#top-content-left-div h1 {
+    font-size: 30px;
+}
+
+#top-content-left-div h2 {
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: solid lightgray 1px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+#feature-list {
+    border-left: solid var(--company-color) 5px;
+    padding-left: 15px;
+}
+
+#cta-button {
+    color: white;
+    background-color: var(--company-color);
+    font-size: 15px;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#cta-button:hover {
+	filter: brightness(150%);
+}
+
+a {
+	text-decoration: none;
+}
+
+#top-content-left-div div h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 12px 0 12px 0;
+}
+
+#top-content-right-div {
+    display: grid;
+}
+
+#top-content-right-div .bottom {
+    margin-top: 15px;
+}
+
+#large-title {
+    color: var(--company-color);
+    font-size: 45px;
+    font-weight: 500;
+    border-bottom: solid lightgray 1px;
+    padding-bottom: 30px;
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+#bottom-content-div {
+    display: grid;
+    grid-template-columns: auto 100px 400px;
+}
+
+#bottom-content-right-div h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--company-color);
+}
+
+#bottom-content-right-div p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#bottom-content-right-div div {
+    padding-bottom: 20px;
+    border-bottom: solid lightgray 1px;
+}
+
+#video-slider {
+    margin: 0 40px 0 40px;
+    width: 20px;
+    background-color: white;
+    height: calc(100% - 12px);
+    border-radius: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#video-slider div {
+    height: var(--video-slider-progress);
+    width: 6px;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: var(--company-color);
+}
+
+#footer {
+    height: 80px;
+    line-height: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#statictop-chevron, #dynamictop-chevron, #topfull-chevron {
+    display: inline-block;
+}
+
+#statictop-link:hover, #dynamictop-link:hover, #topfull-link:hover {
+	filter: brightness(150%);
+}
+
+video {
+    width: 100%;
+}
+
+@media (max-width:1200px)  {
+    img {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .only-pc {
+        display: none;
+    }
+
+	.only-mobile {
+		display: initial;
+	}
+	
+    #title-div {
+        display: none;
+    }
+
+    #content-div {
+        width: initial;
+        margin: 0;
+        padding: 0 20px 0 20px;
+    }
+
+    #top-content-div {
+        display: block;
+        width: initial;
+    }
+
+    #top-content-left-div {
+        padding-top: 0;
+    }
+
+    #top-content-left-div {
+        width: initial;
+    }
+
+    #bottom-content-div {
+        display: block;
+        width: initial;
+    }
+
+    #large-title {
+        margin-top: 50px;
+    }
+
+    #bottom-content-right-div {
+        padding-bottom: 50px;
+    }
+
+    #bottom-content-right-div h3 {
+        margin-top: 25px;
+    }
+
+    #video-slider {
+        margin: 40px 0 40px 0;
+        width: initial;
+        background-color: white;
+        height: 13px;
+        border-radius: 10px;
+        padding: 7px 6px 0 6px;
+    }
+    
+    #video-slider div {
+        height: 6px;
+        width: var(--video-slider-progress);
+        margin: 0;
+        border-radius: 3px;
+        background-color: var(--company-color);
+    }
+}
